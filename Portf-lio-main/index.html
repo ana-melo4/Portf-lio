@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Clara Melo Dalma | Portfolio Profissional</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="" class="logo-img">
+            <span class="logo-text">Meu Portfólio</span>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#hero" class="nav-btn">Início</a>
+            <a href="#sobre" class="nav-btn">Sobre</a>
+            <a href="#materias" class="nav-btn">Matérias</a>
+            <a href="#contato" class="nav-btn contact-special">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="hero">
+        <div class="parallax-lantern l1"></div>
+        <div class="parallax-lantern l2"></div>
+        <div class="parallax-lantern l3"></div>
+        <div class="parallax-lantern l4"></div>
+        
+        <div class="glass-card" data-aos="zoom-in" data-aos-duration="1200">
+            <span class="badge">Futura Técnica de TI</span>
+            <h1>Ana Clara <br> <span class="accent">Melo Dalma</span></h1>
+            <p>Transformando códigos em sonhos e educação em futuro no SESI SENAI.</p>
+            <div class="hero-btns">
+                <button class="btn-glow" id="btn-explorar">Explorar Portfólio</button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <main class="content-section" id="portfolio-content">
+        
+        <section id="sobre" class="inner-section" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-container">
+                <p>Me chamo Ana Clara, nasci no dia 26/03/2009. Sou natural de Vitória, Espírito Santo, mas vim para Florianópolis com um ano e seis meses, e desde então moro aqui.</p>
+                <p>Estou no meu terceiro ano do ensino médio na escola <strong>SESI SENAI</strong>. Pretendo me formar e seguir na carreira de técnico de TI.</p>
+                <p>Este portfólio documenta meu desenvolvimento e minhas atividades durante esses três anos de ensino.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-galeria-rodape">
+            <div class="caixa-carrossel">
+                <button class="seta-carrossel esq" onclick="rolarCarrossel(this, -1)">&#10094;</button>
+                <div class="trilha-imagens">
+                    <img src="1.png"  alt="Foto 1">
+                    <img src="2.png"  alt="Foto 2">
+                    <img src="19.png" alt="Foto 3">
+                    <img src="3.png"  alt="Foto 4">
+                    <img src="20.png" alt="Foto 5">
+                    <img src="12.png" alt="Foto 6">
+                </div>
+                <button class="seta-carrossel dir" onclick="rolarCarrossel(this, 1)">&#10095;</button>
+            </div>
+
+            <div class="caixa-carrossel">
+                <button class="seta-carrossel esq" onclick="rolarCarrossel(this, -1)">&#10094;</button>
+                <div class="trilha-imagens">
+                    <img src="16.png" alt="Foto 1">
+                    <img src="13.png" alt="Foto 2">
+                    <img src="4.png"  alt="Foto 3">
+                    <img src="14.png" alt="Foto 4">
+                    <img src="17.png" alt="Foto 5">
+                </div>
+                <button class="seta-carrossel dir" onclick="rolarCarrossel(this, 1)">&#10095;</button>
+            </div>
+
+            <div class="caixa-carrossel">
+                <button class="seta-carrossel esq" onclick="rolarCarrossel(this, -1)">&#10094;</button>
+                <div class="trilha-imagens">
+                    <img src="6.png" alt="Foto 1">
+                    <img src="7.png" alt="Foto 2">
+                    <img src="5.png" alt="Foto 3">
+                    <img src="15.png" alt="Foto 4">
+                    <img src="8.png" alt="Foto 5">
+                </div>
+                <button class="seta-carrossel dir" onclick="rolarCarrossel(this, 1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="materias" class="inner-section" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Minhas Matérias</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Grid de Cards das Matérias -->
+            <div class="subjects-grid" id="subjects-grid">
+                <div class="subject-card" onclick="openSubjectView('matematica')">
+                    <h3>Matemática</h3>
+                    <span class="card-btn">Acessar Matéria →</span>
+                </div>
+
+                <div class="subject-card" onclick="openSubjectView('linguagens')">
+                    <h3>Linguagens</h3>
+                    <span class="card-btn">Acessar Matéria →</span>
+                </div>
+
+                <div class="subject-card" onclick="openSubjectView('humanas')">
+                    <h3>Humanas</h3>
+                    <span class="card-btn">Acessar Matéria →</span>
+                </div>
+
+                <div class="subject-card" onclick="openSubjectView('natureza')">
+                    <h3>Natureza</h3>
+                    <span class="card-btn">Acessar Matéria →</span>
+                </div>
+
+                <div class="subject-card" onclick="openSubjectView('tecnico')">
+                    <h3>Técnico</h3>
+                    <span class="card-btn">Acessar Matéria →</span>
+                </div>
+
+                <div class="subject-card" onclick="openSubjectView('ra')">
+                    <h3>RA</h3>
+                    <span class="card-btn">Acessar Matéria →</span>
+                </div>
+            </div>
+
+            <!-- Área de Exibição Detalhada da Matéria -->
+            <div class="subject-detail-container" id="subject-detail" style="display: none;">
+                <button class="btn-back" onclick="closeSubjectView()">← Voltar às Matérias</button>
+                <h3 class="subject-title" id="subject-title">Nome da Matéria</h3>
+
+                <!-- Navegação de Trimestres -->
+                <div class="trimester-navigation">
+                    <button class="trimester-arrow" onclick="changeTrimester(-1)">&#10094;</button>
+                    <div class="trimester-indicator-container">
+                        <span class="trimester-tab active" data-trimester="1" onclick="jumpToTrimester(1)">1º Trimestre</span>
+                        <span class="trimester-tab" data-trimester="2" onclick="jumpToTrimester(2)">2º Trimestre</span>
+                        <span class="trimester-tab" data-trimester="3" onclick="jumpToTrimester(3)">3º Trimestre</span>
+                    </div>
+                    <button class="trimester-arrow" onclick="changeTrimester(1)">&#10095;</button>
+                </div>
+
+                <!-- Carrossel de Trimestres -->
+                <div class="trimester-slider-window">
+                    <div class="trimester-slider-track" id="trimester-track">
+                        
+                        <!-- 1º Trimestre -->
+                        <div class="trimester-pane" id="pane-1">
+                            <div class="activities-grid" id="activities-t1"></div>
+                        </div>
+
+                        <!-- 2º Trimestre -->
+                        <div class="trimester-pane" id="pane-2">
+                            <div class="activities-grid" id="activities-t2"></div>
+                        </div>
+
+                        <!-- 3º Trimestre -->
+                        <div class="trimester-pane" id="pane-3">
+                            <div class="activities-grid" id="activities-t3"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="inner-section" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Contato</h2>
+                <div class="divider"></div>
+            </div>
+            <p>Gostou do meu trabalho? Vamos conversar sobre tecnologia!</p>
+            <a href="mailto:seuemail@exemplo.com" class="btn-glow">Enviar E-mail</a>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
