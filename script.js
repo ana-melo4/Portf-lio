@@ -173,7 +173,32 @@ const subjectsData = {
                     link: "https://youtu.be/CZZmJzWEinw?si=igWULyJXeKHcar-z"
                 }
             ],
-            2: [],
+            2: [
+                {
+                    title: "Atividade - Desafio BP Web Plataforma IoT & Web API",
+                    desc: "Desenvolvimento do desafio prático BP Web, com foco na integração entre sistemas embarcados e uma plataforma web. Foram desenvolvidas rotas para envio e recebimento de dados de telemetria, além da hospedagem e realização do deploy da aplicação em nuvem por meio da Render. Essa atividade foi fundamental para aprimorar os conhecimentos em desenvolvimento full-stack, permitindo a prática da criação e estruturação de APIs, do gerenciamento de requisições assíncronas e da publicação de aplicações em um ambiente de produção.",
+                    skills: "Competências & Habilidades: Desenvolvimento Web Front-end & Back-end, Consumo de APIs REST e comunicação HTTP, Deploy e hospedagem de aplicações em nuvem (Render).",
+                    link: "https://rinhasenai2026-ngji.onrender.com/"
+                },
+                {
+                    title: "Atividade - Protótipo de Semáforo Inteligente",
+                    desc: "A atividade teve como objetivo montagem de um circuito eletrônico de semáforo inteligente, utilizando LEDs e microcontrolador para controlar as mudanças de sinal. A atividade ajudou a desenvolver conhecimentos sobre a integração entre hardware e software, além da criação de lógicas temporizadas.",
+                    skills: "Competências & Habilidades: Programação de Microcontroladores (Arduino / ESP32), Lógica de Máquinas de Estados (State Machines), Montagem de Circuitos e Sinalização Eletrônica.",
+                    link: "https://www.youtube.com/watch?v=nkRhrmmJBz4"
+                },
+                {
+                    title: "Atividade - Controle Básico de Saída Digital — Ligar LED",
+                    desc: "A atividade teve como objetivo realizar um projeto prático de automação e sistemas embarcados, utilizando um microcontrolador para controlar o acendimento e o tempo de um LED. A atividade ajudou a compreender o funcionamento dos pinos digitais (GPIO) e os fundamentos da eletrônica aplicada.",
+                    skills: "Competências & Habilidades: Configuração de Pinos GPIO de Saída, Eletrônica Digital e Dimensionamento de Resistores, Estrutura de Firmware Embarcado em C/C++.",
+                    link: "https://www.youtube.com/watch?v=j95tsOfhthg"
+                },
+                {
+                    title: "Atividade - Controle de LED com Botão (Lógica Toggle Interativa)",
+                    desc: "A atividade teve como objetivo um desafio prático de controle de LED por botão, utilizando a lógica Toggle para alternar seu estado a cada pressionamento. A atividade ajudou a compreender o processamento de entradas digitais e o uso do debounce para evitar falhas causadas pelo ruído do botão.",
+                    skills: "Competências & Habilidades: Leitura de Entradas Digitais & Debounce por Software, Lógica de Alternância de Estado (Toggle Flip-Flop), Controle Reativo em Sistemas Embarcados.",
+                    link: "https://www.youtube.com/shorts/KcOSBOOBPlU"
+                },
+            ],
             3: []
         }
     },
